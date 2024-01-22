@@ -13,10 +13,15 @@
 
 - Enable secure communication between microservices and the SQL Database.
 - Use Azure AD Managed Identity for authentication between AKS and Azure SQL Database.
-# API Gateway:
+# Ingress Controller:
 
-- Consider using Azure API Management or another API gateway to manage and expose APIs for external access.
-- API Gateway can provide features like authentication, rate limiting, and request/response transformation.
+- Use an Ingress controller for routing external HTTP/S traffic to the appropriate microservices.
+- NGINX Ingress Controller is a common choice for AKS.
+# Ingress Resource:
+
+- Define an Ingress resource to specify routing rules for external access to microservices.
+- Configure paths, rules, and backend services for each microservice.:
+
 # Azure Key Vault:
 
 - Store sensitive information, such as database connection strings and secrets, securely in Azure Key Vault.
@@ -35,7 +40,9 @@
 
 - Azure Key Vault: Centralizing the management of secrets in Key Vault enhances security. AKS can access secrets securely without the need to embed them in configuration files.
 
-- API Gateway: An API Gateway provides a single entry point for external clients, simplifying access to the microservices. It also offers additional features such as rate limiting, caching, and security.
+- Ingress Controller: NGINX Ingress Controller is a popular choice for routing external traffic to services within AKS. It provides features like load balancing, SSL termination, and routing rules.
+
+- Ingress Resource: The Ingress resource defines routing rules for external HTTP/S traffic. It specifies how requests are directed to microservices based on paths, rules, and backend services.
 
 # Considerations for Future Expansion:
 - Logging and Monitoring: Implement logging and monitoring solutions for both microservices and the infrastructure to gain insights into application behavior and performance.
