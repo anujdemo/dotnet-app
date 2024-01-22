@@ -56,6 +56,7 @@
 - Ingress Resource: The Ingress resource defines routing rules for external HTTP/S traffic. It specifies how requests are directed to microservices based on paths, rules, and backend services.
 
 # Considerations for Future Expansion:
+- we can deploy n numbers of microservices on AKS.
 - Logging and Monitoring: Implement logging and monitoring solutions for both microservices and the infrastructure to gain insights into application behavior and performance.
 
 - Continuous Integration/Continuous Deployment (CI/CD): Implement CI/CD pipelines for automated deployment of microservices updates to AKS.
