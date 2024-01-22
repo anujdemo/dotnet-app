@@ -10,7 +10,7 @@ variable "location" {
   nullable    = false
 }
 variable "acr_name" {
-    
+    default = "devacr899045678"
 }
 variable "name" {
   type        = string
