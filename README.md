@@ -40,7 +40,7 @@
 
 - Azure Key Vault: Centralizing the management of secrets in Key Vault enhances security. AKS can access secrets securely without the need to embed them in configuration files.
 
-- Ingress Controller: NGINX Ingress Controller is a popular choice for routing external traffic to services within AKS. It provides features like load balancing, SSL termination, and routing rules.
+- Ingress Controller: NGINX Ingress Controller is a popular choice for routing external traffic to services within AKS. It provides features like load balancing, SSL termination, and routing rules.The Ingress routes the traffic based on paths, domains, headers, etc., which consolidates multiple endpoints in a single resource that runs inside Kubernetes.With this, we can serve multiple services simultaneously from one exposed endpoint -the load balancer.
 
 - Ingress Resource: The Ingress resource defines routing rules for external HTTP/S traffic. It specifies how requests are directed to microservices based on paths, rules, and backend services.
 
