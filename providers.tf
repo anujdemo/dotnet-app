@@ -14,11 +14,11 @@ terraform {
     version = "~>2.0"
     }
   }  
-  backend "azurerm" {
+  /*backend "azurerm" {
    storage_account_name = "terraformstate80"
    container_name       = "tfstatefiles"
    key = "qa.tfstate"
-  }
+  }*/
 }
 provider "azurerm" {
   # Configuration options
