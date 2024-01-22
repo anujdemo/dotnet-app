@@ -3,7 +3,7 @@
 # Azure Kubernetes Service (AKS):
 
 - Use AKS to orchestrate and manage the deployment of microservices. AKS provides a scalable, managed Kubernetes service.
-Microservices:
+# Microservices:
 - Deploy each microservice as a separate containerized application within AKS.
 - Use Docker containers for packaging each microservice to ensure consistency and isolation.
 # Azure SQL Database:
@@ -22,6 +22,7 @@ Microservices:
 - Store sensitive information, such as database connection strings and secrets, securely in Azure Key Vault.
 - Access secrets securely from AKS using Azure AD Managed Identity.
 # Architecture Diagram:
+![aks](https://github.com/anujdemo/dotnet-app/assets/85152703/a5dd6142-9a1a-42d1-bcb8-beda2993d645)
 
 # Discussion of Design Choices:
 - Containerization: Using containers (Docker) allows each microservice to be isolated, making it easier to deploy, scale, and manage. It ensures consistency across development, testing, and production environments.
