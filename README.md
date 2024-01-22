@@ -37,7 +37,8 @@
 - ACR provides a private and secure registry for your container images
   
 # Architecture Diagram:
-![aks](https://github.com/anujdemo/dotnet-app/assets/85152703/a5dd6142-9a1a-42d1-bcb8-beda2993d645)
+![resource](https://github.com/anujdemo/dotnet-app/assets/85152703/b41849ac-ca59-477d-8a50-b91762215659)
+
 
 # Discussion of Design Choices:
 - Containerization: Using containers (Docker) allows each microservice to be isolated, making it easier to deploy, scale, and manage. It ensures consistency across development, testing, and production environments.
