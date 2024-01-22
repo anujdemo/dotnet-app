@@ -78,7 +78,7 @@
 Terraform state is saved to a storage account "terraformstate80" in the "tfstatefiles" container.
 
 # Adding new Clusters
-- Copy and modify an environments tfvars file. The filename must match the cluster name.
+-  modify an environments tfvars file. we can create multiple k8s cluster like testing , Staging ,Production environment.
 - There is a node_pools array in the tfvars file that describes the settings for each nodepool.
   
 
