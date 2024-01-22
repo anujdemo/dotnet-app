@@ -6,6 +6,7 @@
 # Microservices:
 - Deploy each microservice as a separate containerized application within AKS.
 - Use Docker containers for packaging each microservice to ensure consistency and isolation.
+- Using Azure Container Registry (ACR) to store Docker images for Azure Kubernetes Service (AKS) offers several advantages and best practices
 # Azure SQL Database:
 - Host the database in Azure SQL Database, a fully managed relational database service.
 - Configure the necessary databases and tables for the microservices.
@@ -26,6 +27,15 @@
 
 - Store sensitive information, such as database connection strings and secrets, securely in Azure Key Vault.
 - Access secrets securely from AKS using Azure AD Managed Identity.
+  
+# Azure Container Registry (ACR) 
+- Integration with Azure Services
+- ACR supports Azure Active Directory (AAD) integration, enabling secure and granular access control using Azure AD identities. This aligns with Azure's best practices for authentication and authorization.
+- When our container registry (ACR) is in the same Azure region as our AKS cluster, it can improve the speed of pulling images. This is because the images are stored close to the AKS cluster, reducing network latency
+- ACR provides georeplication, enabling you to replicate your container images to multiple Azure regions. This can enhance availability and resilience by allowing AKS clusters in different regions to pull images from a nearby registry replica
+- ACR, offer built-in vulnerability scanning. This helps identify and address security vulnerabilities in your container images before deploying them to AKS.
+- ACR provides a private and secure registry for your container images
+  
 # Architecture Diagram:
 ![aks](https://github.com/anujdemo/dotnet-app/assets/85152703/a5dd6142-9a1a-42d1-bcb8-beda2993d645)
 
